@@ -1,9 +1,39 @@
 [gd_scene format=3 uid="uid://dwgiigeedaytq"]
 
 [ext_resource type="Script" uid="uid://ogjrlmyjphjk" path="res://Scripts/player.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://ckxlm30pkyfnx" path="res://assets/Player/fish_orange.png" id="2_gntrk"]
+[ext_resource type="Texture2D" uid="uid://dm13yr8jdkjk" path="res://assets/Player/fish_orange_outline.png" id="3_dewec"]
+[ext_resource type="Texture2D" uid="uid://rkjoysmxuadk" path="res://assets/Player/fish_orange_skeleton.png" id="4_5ixxa"]
+[ext_resource type="Texture2D" uid="uid://coarcbsbhgfxl" path="res://assets/Player/fish_orange_skeleton_outline.png" id="5_nn08x"]
+[ext_resource type="Script" uid="uid://cuttwwu2gsjiv" path="res://Scenes/animated_sprite_2d.gd" id="6_nn08x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
 size = Vector2(32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uxa2c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gntrk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dewec")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_5ixxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nn08x")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 2.0
+}]
 
 [node name="Player" type="Node2D" unique_id=1544093202 groups=["player"]]
 
@@ -14,9 +44,10 @@ script = ExtResource("1")
 shape = SubResource("RectangleShape2D_1")
 one_way_collision = true
 
-[node name="Polygon2D" type="Polygon2D" parent="CharacterBody2D" unique_id=295595236]
-color = Color(0.2, 0.4, 1, 1)
-polygon = PackedVector2Array(-16, -24, 16, -24, 16, 24, -16, 24)
-uv = PackedVector2Array(-16, -24, 16, -24, 16, 24, -16, 24)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1245240506]
+sprite_frames = SubResource("SpriteFrames_uxa2c")
+animation = &"walk"
+frame_progress = 0.9657417
+script = ExtResource("6_nn08x")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1782834648]

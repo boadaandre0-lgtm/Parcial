@@ -1,6 +1,14 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1786625207
+::res://::1786625719
 README.md::TextFile::-1::1786625098::0::1::::<><><>0<>0<><>::
+::res://assets/::1786625737
+::res://assets/Enemigo/::1786625774
+fish_grey_outline.png::CompressedTexture2D::8195921678828119221::1786625758::1786625774::1::::<><><>0<>0<>8e50919c1930736f757676e3462e72d9<>res://.godot/imported/fish_grey_outline.png-d85f1072c382b6580db712fc9344ccad.ctex::
+::res://assets/Player/::1786625950
+fish_orange.png::CompressedTexture2D::5522901318526949349::1786625740::1786625774::1::::<><><>0<>0<>a75a1c65ca419e34ae71bf38697adf37<>res://.godot/imported/fish_orange.png-f2001aa8f550e25f74c88353323b801e.ctex::
+fish_orange_outline.png::CompressedTexture2D::236968996337683948::1786625950::1786625963::1::::<><><>0<>0<>efe03e669ece5c6836b7948c008f1562<>res://.godot/imported/fish_orange_outline.png-6af92199c461c54c9881e026a0584a90.ctex::
+fish_orange_skeleton.png::CompressedTexture2D::1214426862380344960::1786625941::1786625963::1::::<><><>0<>0<>d15ef808a7b4b419af5bafbe7a0155c1<>res://.godot/imported/fish_orange_skeleton.png-dfdc9f348c03cfd1f3940095920cce0c.ctex::
+fish_orange_skeleton_outline.png::CompressedTexture2D::5756521019168356973::1786625944::1786625963::1::::<><><>0<>0<>1d0d7b836d83d709a89e4229b91cb2d4<>res://.godot/imported/fish_orange_skeleton_outline.png-3dc085a84a7ba07a65bdc635c78333cb.ctex::
 ::res://Scenes/::1786625146
 Enemigo.tscn::PackedScene::-1::1786622826::0::1::::<><><>0<>0<><>::res://Scripts/enemigo_patron.gd
 Moneda.tscn::PackedScene::-1::1786622826::0::1::::<><><>0<>0<><>::res://Scripts/moneda.gd
