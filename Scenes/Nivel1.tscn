@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://pdabtn84dru3"]
+
+[ext_resource type="PackedScene" uid="uid://dwgiigeedaytq" path="res://Scenes/Player.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://Scenes/Enemigo.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://Scenes/Moneda.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://Scenes/Palanca.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://Scenes/Plataforma.tscn" id="5_hdxwh"]
+
+[node name="Nivel1" type="Node2D" unique_id=1020044277]
+
+[node name="Player" parent="." unique_id=57546437 instance=ExtResource("1")]
+position = Vector2(200, 300)
+
+[node name="Enemigo" parent="." unique_id=1181636631 instance=ExtResource("2")]
+position = Vector2(500, 300)
+
+[node name="Moneda1" parent="." unique_id=1355034841 instance=ExtResource("3")]
+position = Vector2(320, 300)
+
+[node name="Moneda2" parent="." unique_id=590779845 instance=ExtResource("3")]
+position = Vector2(400, 260)
+
+[node name="Moneda3" parent="." unique_id=665110697 instance=ExtResource("3")]
+position = Vector2(650, 300)
+
+[node name="Palanca" parent="." unique_id=2064285658 instance=ExtResource("4")]
+position = Vector2(750, 300)
+
+[node name="Plataforma" parent="." unique_id=2095928667 instance=ExtResource("5_hdxwh")]
+position = Vector2(203, 342)
